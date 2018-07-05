@@ -2,13 +2,13 @@ module.exports = [
   {
     type: 'confirm',
     name: 'lib',
-    message: 'Make default build target as library?',
+    message: 'Build project as library?',
     default: true,
   },
   {
     type: 'confirm',
     name: 'incl',
-    message: 'Include dts bundler in build process?',
+    message: 'Add dts bundling in build?',
     default: true,
   },
   {

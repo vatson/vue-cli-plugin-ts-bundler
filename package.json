@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {},
-  "keywords": [],
+  "keywords": ["vue", "vue-cli", "plugin", "ts"],
   "author": "Vadim Tiukov <dev.vatson@gmail.com>",
   "license": "MIT",
   "devDependencies": {},

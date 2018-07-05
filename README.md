@@ -31,13 +31,6 @@ cd my-vue-app
 vue add dts-bundler
 ```
 
-Now you can use the added command together with build:
-
-```sh
-npm run build
-npx vue-cli-service bundle-dts 
-```
-
 ## CLI Commands
 
 The plugin adds one command `bundnle-dts` to bundle the generated declaration files during build process. 
