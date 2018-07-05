@@ -1,14 +1,12 @@
 {
-  "name": "vue-cli-plugin-dts-bundler",
-  "version": "0.0.1",
+  "name": "vue-cli-plugin-ts-bundler",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Vadim Tiukov <dev.vatson@gmail.com>",
+  "license": "MIT",
   "devDependencies": {},
   "dependencies": {
     "dts-bundle": "^0.7.3"
