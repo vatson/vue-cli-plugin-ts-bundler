@@ -31,13 +31,22 @@ cd my-vue-app
 vue add dts-bundler
 ```
 
+Now you can run `build` or use CLI commands listed below. 
+
 ## CLI Commands
 
-The plugin adds one command `bundnle-dts` to bundle the generated declaration files during build process. 
+The plugin adds one command `bundnle-dts` to bundle the declaration files generated during build process.
 
 ```sh
 npx vue-cli-service bundle-dts [options]
 ```
+
+or already configured npm command 
+
+```sh
+npm run bundleDts
+```
+
 
 All supported options you can find here [https://github.com/TypeStrong/dts-bundle](https://github.com/TypeStrong/dts-bundle#options)
 
@@ -48,6 +57,10 @@ In order for everything to work correctly, there was a need to disable some webp
 
 - `thread-loader` - doesn't allow to write dts files on filesystem;
 - `cache-loader` - incorrectly caches __compilerOptions__ passed to `ts-loader`
+
+## TODO
+
+- Add an ability to replace default HelloWorld with a base component;
 
 ## License 
 

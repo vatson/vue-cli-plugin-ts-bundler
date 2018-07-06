@@ -27,7 +27,7 @@ module.exports = (api, options) => {
 
   //Bundle command
   api.registerCommand('bundle-dts', {
-    description: 'Bundle generated declaration files to a single file',
+    description: 'Bundle the generated declaration files to a single file',
     usage: 'vue-cli-service bundle-dts [options]',
   }, async (args) => {
     const config = api.resolveWebpackConfig();
@@ -39,9 +39,15 @@ module.exports = (api, options) => {
 
     delete args['_'];
 
+    if (args.main) {
+      const main = path.parse(args.main);
+      args.main = path.resolve(baseDir, main.dir, main.name + '.d.ts');
+    }
+
     dts.bundle({
       ...{ baseDir, main, name },
       ...args
     });
+
   });
 }
