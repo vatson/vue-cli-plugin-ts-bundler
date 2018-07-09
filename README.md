@@ -18,11 +18,19 @@ And additionally:
 - removes all conflicts with dts generating
 
 ## Getting Started
-If yon don't have a project created with Vue CLI 3:
+
+### A new project
+
+If yon don't have a project, you can create it using the preset:
 
 ```sh
-vue create my-vue-app
+vue create --preset vatson/vue-ts-lib my-vue-lib
 ```
+
+_More information you can find here https://github.com/vatson/vue-ts-lib_
+
+
+### Adding to an existing project
 
 Install the plugin into your project:
 

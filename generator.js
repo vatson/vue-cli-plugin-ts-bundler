@@ -21,12 +21,12 @@ module.exports = (api, options) => {
   // Build command
   let buildCommand = 'vue-cli-service build';
 
-  if (options.lib || options.mode === 'awesome') {
+  if (options.buildAsLib || options.mode === 'awesome') {
     buildCommand += ' --target lib ';
     buildCommand += options.main ? options.main : 'src/main.ts';
   }
 
-  if (options.incl || options.mode === 'awesome') {
+  if (options.bundleAfterBuild || options.mode === 'awesome') {
     buildCommand += ' && npm run bundleDts';
   }
 
