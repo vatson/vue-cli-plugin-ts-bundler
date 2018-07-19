@@ -36,14 +36,15 @@ Install the plugin into your project:
 
 ```sh
 cd my-vue-app
-vue add dts-bundler
+vue add ts-bundler
 ```
 
 Now you can run `build` or use CLI commands listed below. 
 
+
 ## CLI Commands
 
-The plugin adds one command `bundnle-dts` to bundle the declaration files generated during build process.
+The plugin adds one command `bundle-dts` to bundle the declaration files generated during build process.
 
 ```sh
 npx vue-cli-service bundle-dts [options]
@@ -59,6 +60,13 @@ npm run bundleDts
 All supported options you can find here [https://github.com/TypeStrong/dts-bundle](https://github.com/TypeStrong/dts-bundle#options)
 
 
+## Example of use
+
+- [https://github.com/vatson/vue-anchored-menu](https://github.com/vatson/vue-anchored-menu)
+
+_Feel free to create an issue if you want to add your project to the list and help others solve their problems on good examples_
+
+
 ## Known caveats
 
 In order for everything to work correctly, there was a need to disable some webpack's loaders:
@@ -66,9 +74,16 @@ In order for everything to work correctly, there was a need to disable some webp
 - `thread-loader` - doesn't allow to write dts files on filesystem;
 - `cache-loader` - incorrectly caches __compilerOptions__ passed to `ts-loader`
 
+
+## Potentially useful
+
+- [https://github.com/vatson/vue-cli-plugin-ts-paths](https://github.com/vatson/vue-cli-plugin-ts-paths) helps to avoid duplication of configurations for your path aliases
+
+
 ## TODO
 
 - Add an ability to replace default HelloWorld with a base component;
+
 
 ## License 
 

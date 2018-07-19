@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-ts-bundler",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Zero configuration bundler for your TypeScript library",
   "homepage": "https://github.com/vatson/vue-cli-plugin-ts-bundler",
   "repository": {
